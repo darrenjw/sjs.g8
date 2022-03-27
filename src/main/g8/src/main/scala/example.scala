@@ -65,12 +65,12 @@ object JsFunction:
     val num = numS.toInt
     val fac = factor(num)
     if (num == fac)
-      dom.window.alert(s"$numS is prime!")
+      dom.window.alert(s"\$numS is prime!")
     else
       val facS = fac.toString
       val rem = num / fac
       facfield.value = rem.toString
-      dom.window.alert(s"Smallest factor of $numS is: $facS")
+      dom.window.alert(s"Smallest factor of \$numS is: \$facS")
     false
 
   @annotation.tailrec

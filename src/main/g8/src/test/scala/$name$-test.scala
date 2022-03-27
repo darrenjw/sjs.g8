@@ -1,14 +1,13 @@
-import org.scalatest.flatspec.AnyFlatSpec
+import cats.*
+import cats.implicits.*
 
-class SetSpec extends AnyFlatSpec:
+import munit.*
 
-  import breeze.stats.distributions.Rand.VariableSeed.randBasis
+// Example unit tests
+class MyUnitTests extends FunSuite:
 
-  "A Poisson(10.0)" should "have mean 10.0" in {
-    import breeze.stats.distributions.Poisson
-    val p = Poisson(10.0)
-    val m = p.mean
-    assert(math.abs(m - 10.0) < 0.000001)
+  test("A List should combine") {
+    val l = List(1,2) |+| List(3,4)
+    assert(l === List(1,2,3,4))
   }
-
 

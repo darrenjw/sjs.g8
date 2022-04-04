@@ -1,6 +1,6 @@
 A [Giter8](http://www.foundweekends.org/giter8/) template for [Scala.JS](https://www.scala-js.org/)!
 
-* Scala.js 1.9.0, Scala 3.1.0, Sbt 1.6.1
+* Scala.js 1.10.0, Scala 3.1.0, Sbt 1.6.1
 
 ```bash
 sbt new darrenjw/sjs.g8
